@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Protect CCTV Services</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgb(76, 167, 151);
+            color: whitesmoke;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: rgb(22, 155, 144);
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: gray;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .hero {
+            background: url(images/camera.jpg) no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+             background: linear-gradient(135deg, #008080, #00a8a8);
+             color: white;
+             padding: 25px;
+             border-radius: 12px;
+             text-align: center;
+             box-shadow: 0 5px 15px gray;
+        }
+        .card:hover {
+            background: #006666;
+            transform: translateY(-5px);
+        }
+        .contact {
+            background: rgb(71, 187, 139);
+        }
+
+        footer {
+            background: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: black;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: black;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            border: 1px solid gainsboro;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+            background: white;
+        }
+
+        .product-card:hover {
+            transform: scale(1.5);
+            box-shadow: 0 5px 15px rgba(35, 77, 128, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: contain;
+        }
+
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .brand-card {
+            background: black;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .brand-card:hover {
+            transform: scale(1.05);
+            background: black;
+        }
+
+        .brand-card a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .brand-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            background: whitesmoke;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Uni-Protect CCTV Services</h1>
+    <p>Your Security, Our Priority</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#brands">Brands</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Professional CCTV Installation</h1>
+    <p>Secure your home and business with our reliable CCTV solutions.</p>
+    <button onclick="window.open('https://forms.gle/bVwuFYtkNcKmd1Ak7','_blank')">Get a Quote</button>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+
+        <div class="card">
+            <h3>CCTV Installation</h3>
+            <p>We install high-quality CCTV systems for homes and businesses.</p>
+        </div>
+
+        <div class="card">
+            <h3>Maintenance</h3>
+            <p>Regular maintenance to ensure your system is always working.</p>
+        </div>
+
+        <div class="card">
+            <h3>Remote Viewing Setup</h3>
+            <p><a href="https://www.earthcam.com/usa/florida/fortlauderdale/marina/?cam=lauderdalemarina" target="_blank" style="text-decoration: none; color: inherit;">Access your cameras anytime using your phone or computer.</a>
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Uni-Protect CCTV Services provides affordable, reliable, and high-quality security solutions designed to help protect homes, small offices, and business establishments. We are committed to delivering dependable surveillance systems that ensure safety, peace of mind, and continuous monitoring for our clients. We specialize in the installation, configuration, troubleshooting, and maintenance of CCTV systems, ensuring that every setup is properly optimized for clear monitoring and long-term performance. Whether it is a new installation or an upgrade of an existing system, we provide tailored solutions based on the specific needs of each client. Our goal is to make security accessible and effective by offering cost-efficient services without compromising quality. We also assist clients in choosing the right CCTV equipment and positioning to maximize coverage and visibility. At Uni-Protect CCTV Services, we value trust, reliability, and customer satisfaction—ensuring that every project is completed with professionalism and attention to detail.</p>
+</section>
+
+<section id="products">
+    <h2>Featured WIFI Camera Products for the Month</h2>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <a href="https://www.tp-link.com/ph/home-networking/cloud-camera/tapo-c212/" tabindex="_blank"></a>
+            <img src="images/Tapo_C212.jpg" alt="C212"></a>
+            <h4>TP-Link Tapo C212</h4>
+            <p>Pan/Tilt Indoor Camera</p>
+        </div>
+
+        <div class="product-card">
+            <a href="https://www.tp-link.com/ph/home-networking/cloud-camera/tapo-c500/" target="_blank">
+            <img src="images/Tapo_C500.jpg" alt="C500"></a>
+            <h4>Tapo C500</h4>
+            <p>Outdoor 360° Camera</p>
+        </div>
+
+        <div class="product-card">
+            <a href="https://www.tp-link.com/ph/home-networking/cloud-camera/tapo-c230/" target="_blank">
+            <img src="images/Tapo_C230.jpg" alt="C230"></a>
+            <h4>Tapo C230</h4>
+            <p>AI Detection Camera</p>
+        </div>
+
+        <div class="product-card">
+            <a href="https://www.tp-link.com/ph/home-networking/cloud-camera/tapo-c200/" target="_blank">
+            <img src="images/Tapo_C200.jpg" alt="C200"></a>
+            <h4>Tapo C200</h4>
+            <p>WiFi Indoor Camera</p>
+        </div>
+
+        <div class="product-card">
+            <a href="https://www.tp-link.com/ph/home-networking/cloud-camera/tapo-c220/" target="_blank">
+            <img src="images/Tapo_C220.jpg" alt="C222"></a>
+            <h4>Tapo Tapo C220 V2</h4>
+            <p>Indoor CCTV Camera</p>
+        </div>
+
+        <div class="product-card">
+            <a href="https://www.dlink.com/ba/hr/products/dcs-8000lhv2-mini-full-hd-wi-fi-camera" target="_blank">
+            <img src="images/DCS-8000LH.jpg" alt="D-Link"></a>
+            <h4>D-Link DCS-8000LH</h4>
+            <p>Mini HD WiFi Camera</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="brands">
+    <h2>Our Trusted Brands</h2>
+
+    <div class="brands-grid">
+
+        <div class="brand-card">
+            <a href="https://www.hikvision.com" target="_blank">
+                <img src="https://www.logo.wine/a/logo/Hikvision/Hikvision-Logo.wine.svg" alt="Hikvision">
+            </a>
+        </div>
+
+        <div class="brand-card">
+            <a href="https://www.dahuasecurity.com" target="_blank">
+                <img src="https://images.seeklogo.com/logo-png/30/3/dahua-technology-logo-png_seeklogo-300618.png" alt="Dahua">
+            </a>
+        </div>
+
+        <div class="brand-card">
+            <a href="https://www.tp-link.com" target="_blank">
+                <img src="https://www.logo.wine/a/logo/TP-Link/TP-Link-Logo.wine.svg" alt="TP-Link">
+            </a>
+        </div>
+
+        <div class="brand-card">
+            <a href="https://www.honeywell.com" target="_blank">
+                <img src="https://www.logo.wine/a/logo/Honeywell/Honeywell-Logo.wine.svg" alt="Honeywell">
+            </a>
+        </div>
+
+        <div class="brand-card">
+            <a href="https://www.panasonic.com" target="_blank">
+                <img src="https://www.logo.wine/a/logo/Panasonic_(brand)/Panasonic_(brand)-Logo.wine.svg" alt="Panasonic">
+            </a>
+        </div>
+
+        <div class="brand-card">
+            <a href="https://www.sony.com" target="_blank">
+                <img src="https://www.logo.wine/a/logo/Sony/Sony-Logo.wine.svg" alt="Sony">
+            </a>
+        </div>
+
+        <div class="brand-card">
+            <a href="https://www.bosch.com" target="_blank">
+                <img src="https://www.logo.wine/a/logo/Robert_Bosch_GmbH/Robert_Bosch_GmbH-Logo.wine.svg" alt="Bosch">
+            </a>
+        </div>
+
+        <div class="brand-card">
+            <a href="https://e.huawei.com/en/products/enterprise-collaboration/cloudlink/cloudlink-camera" target="_blank">
+                <img src="https://www.logo.wine/a/logo/Huawei/Huawei-Logo.wine.svg" alt="Huawei">
+            </a>
+        </div>
+
+        <div class="brand-card">
+            <a href="https://www.belden.com/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdCdi7jSiALBjjKz6gHgryN7exbd0vlT8mHA&s" alt="Belden">
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 0909 1913131</p>
+    <p>📧 <a href="mailto:uniprotect@gmail.com" target="_blank">uniprotect@gmail.com</a></p>
+    <p>📍 Camarin, Caloocan City, Philippines</p>
+</section>
+
+<a href="#top" class="back-to-top">↑ Top</a>
+
+<footer>
+    <p>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vR1HpkdqJzW6R7INw9Byly8KlwFqR5INtvPJjp7HEXp89QqVJSmI4Y21Y-P_e6Kfl-GmaBqi3-PWico/pub"
+           target="_blank"
+           style="color: white; text-decoration: none;">
+           &copy; 2026 Uni-Protect Security Surveillance Services. All rights reserved.
+        </a>
+    </p>
+</footer>
+
+</body>
+</html>
